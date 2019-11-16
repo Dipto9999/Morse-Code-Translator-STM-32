@@ -1,0 +1,340 @@
+The target system is: Generic -  - arm
+The host system is: Windows - 10.0.18362 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/arm-none-eabi-gcc.exe 
+Build flags: -fstack-usage;-mthumb;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-fdata-sections;-ffunction-sections;-Wall;-g3;
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.su"
+
+The C compiler identification is GNU, found in "C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/3.16.0-rc1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/arm-none-eabi-g++.exe 
+Build flags: -fstack-usage;-mthumb;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-fdata-sections;-ffunction-sections;-Wall;-g3;-std=c++17;-Wno-register;-fno-unwind-tables;-fno-exceptions;-fno-rtti
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.su"
+
+The CXX compiler identification is GNU, found in "C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/3.16.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc.exe (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_fe32c/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_fe32c.dir\build.make CMakeFiles/cmTC_fe32c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe32c.dir/testCCompiler.c.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-gcc.exe"   -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3     -o CMakeFiles\cmTC_fe32c.dir\testCCompiler.c.obj   -c C:\Muntakim\School\Extracurriculars\University\Design_Teams\UBC_Orbit\Work\stm32f401re-cmsis-template\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C static library libcmTC_fe32c.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_fe32c.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fe32c.dir\link.txt --verbose=1
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_fe32c.a  CMakeFiles/cmTC_fe32c.dir/testCCompiler.c.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_fe32c.a
+mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_923ca/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_923ca.dir\build.make CMakeFiles/cmTC_923ca.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_923ca.dir/CMakeCCompilerABI.c.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-gcc.exe"   -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3     -v -o CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp'
+ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi -dD -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -march=armv7e-m+fp -auxbase-strip CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj -g3 -Wall -version -fstack-usage -fdata-sections -ffunction-sections -o C:\Users\munta\AppData\Local\Temp\ccBhRZI3.s
+GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include"
+ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib/gcc/arm-none-eabi/8.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e849902a6aacc553fd145989da8a517b
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp'
+ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj C:\Users\munta\AppData\Local\Temp\ccBhRZI3.s
+GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703
+COMPILER_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp'
+Linking C static library libcmTC_923ca.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_923ca.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_923ca.dir\link.txt --verbose=1
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_923ca.a  CMakeFiles/cmTC_923ca.dir/CMakeCCompilerABI.c.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_923ca.a
+mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include-fixed] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include]
+  implicit include dirs: [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include-fixed;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_923ca/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_923ca.dir\build.make CMakeFiles/cmTC_923ca.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_923ca.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-gcc.exe"   -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3     -v -o CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-gcc.exe]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi -dD -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -march=armv7e-m+fp -auxbase-strip CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj -g3 -Wall -version -fstack-usage -fdata-sections -ffunction-sections -o C:\Users\munta\AppData\Local\Temp\ccBhRZI3.s]
+  ignore line: [GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include"]
+  ignore line: [ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib/gcc/arm-none-eabi/8.3.1/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: e849902a6aacc553fd145989da8a517b]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj C:\Users\munta\AppData\Local\Temp\ccBhRZI3.s]
+  ignore line: [GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703]
+  ignore line: [COMPILER_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-v' '-o' 'CMakeFiles\cmTC_923ca.dir\CMakeCCompilerABI.c.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [Linking C static library libcmTC_923ca.a]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_923ca.dir\cmake_clean_target.cmake]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_923ca.dir\link.txt --verbose=1]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_923ca.a  CMakeFiles/cmTC_923ca.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_923ca.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_5ea24/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5ea24.dir\build.make CMakeFiles/cmTC_5ea24.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5ea24.dir/testCXXCompiler.cxx.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-g++.exe"    -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3 -std=c++17 -Wno-register -fno-unwind-tables -fno-exceptions -fno-rtti    -o CMakeFiles\cmTC_5ea24.dir\testCXXCompiler.cxx.obj -c C:\Muntakim\School\Extracurriculars\University\Design_Teams\UBC_Orbit\Work\stm32f401re-cmsis-template\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX static library libcmTC_5ea24.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_5ea24.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5ea24.dir\link.txt --verbose=1
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_5ea24.a  CMakeFiles/cmTC_5ea24.dir/testCXXCompiler.cxx.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_5ea24.a
+mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_1aa3c/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1aa3c.dir\build.make CMakeFiles/cmTC_1aa3c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1aa3c.dir/CMakeCXXCompilerABI.cpp.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-g++.exe"    -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3 -std=c++17 -Wno-register -fno-unwind-tables -fno-exceptions -fno-rtti    -v -o CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+COLLECT_GCC=C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-g++.exe
+Target: arm-none-eabi
+Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp'
+ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi -dD -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -march=armv7e-m+fp -auxbase-strip CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj -g3 -Wall -Wno-register -std=c++17 -version -fstack-usage -fdata-sections -ffunction-sections -fno-unwind-tables -fno-exceptions -fno-rtti -o C:\Users\munta\AppData\Local\Temp\ccssM9rR.s
+GNU C++17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include"
+ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib/gcc/arm-none-eabi/8.3.1/../../../../include"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include-fixed"
+ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed
+ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C++17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 69ee3c4857777a212907aac1b1ed675c
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp'
+ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\munta\AppData\Local\Temp\ccssM9rR.s
+GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703
+COMPILER_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/;c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp'
+Linking CXX static library libcmTC_1aa3c.a
+"C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_1aa3c.dir\cmake_clean_target.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1aa3c.dir\link.txt --verbose=1
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_1aa3c.a  CMakeFiles/cmTC_1aa3c.dir/CMakeCXXCompilerABI.cpp.obj
+"C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_1aa3c.a
+mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+    add: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1/backward]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/include-fixed] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+  collapse include dir [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include] ==> [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include]
+  implicit include dirs: [C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include/c++/8.3.1/backward;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include-fixed;C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/arm-none-eabi/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_1aa3c/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1aa3c.dir\build.make CMakeFiles/cmTC_1aa3c.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_1aa3c.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-g++.exe"    -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3 -std=c++17 -Wno-register -fno-unwind-tables -fno-exceptions -fno-rtti    -v -o CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\bin\arm-none-eabi-g++.exe]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw --libexecdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib --infodir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/arm-none-eabi --with-libiconv-prefix=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-gmp=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpfr=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-mpc=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-isl=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-libelf=/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 8-2019-q3-update' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (GNU Tools for Arm Embedded Processors 8-2019-q3-update) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/ -isysroot c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi -dD -D__USES_INITFINI__ C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -march=armv7e-m+fp -auxbase-strip CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj -g3 -Wall -Wno-register -std=c++17 -version -fstack-usage -fdata-sections -ffunction-sections -fno-unwind-tables -fno-exceptions -fno-rtti -o C:\Users\munta\AppData\Local\Temp\ccssM9rR.s]
+  ignore line: [GNU C++17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include"]
+  ignore line: [ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/tmp/jenkins/jenkins-GCC-8-build_toolchain_docker-594_20190704_1562200936/install-mingw/lib/gcc/arm-none-eabi/8.3.1/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/progra~2/gnu tools arm embedded/8 2019-q3-update/lib/gcc/../../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring nonexistent directory "c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../arm-none-eabi/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed]
+  ignore line: [ c:\progra~2\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GNU Tools for Arm Embedded Processors 8-2019-q3-update) version 8.3.1 20190703 (release) [gcc-8-branch revision 273027] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 69ee3c4857777a212907aac1b1ed675c]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [ c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\munta\AppData\Local\Temp\ccssM9rR.s]
+  ignore line: [GNU assembler version 2.32.0 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 2.32.0.20190703]
+  ignore line: [COMPILER_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/]
+  ignore line: [c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fstack-usage' '-mthumb' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-fdata-sections' '-ffunction-sections' '-Wall' '-g3' '-std=c++17' '-Wno-register' '-fno-unwind-tables' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles\cmTC_1aa3c.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=armv7e-m+fp']
+  ignore line: [Linking CXX static library libcmTC_1aa3c.a]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -P CMakeFiles\cmTC_1aa3c.dir\cmake_clean_target.cmake]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1aa3c.dir\link.txt --verbose=1]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ar.exe" qc libcmTC_1aa3c.a  CMakeFiles/cmTC_1aa3c.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: ["C:\PROGRA~2\GNU Tools ARM Embedded\8 2019-q3-update\arm-none-eabi\bin\ranlib.exe" libcmTC_1aa3c.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+

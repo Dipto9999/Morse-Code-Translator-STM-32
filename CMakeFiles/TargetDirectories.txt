@@ -1,0 +1,3 @@
+C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/out.elf.dir
+C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/edit_cache.dir
+C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/CMakeFiles/rebuild_cache.dir

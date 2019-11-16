@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "miDebuggerPath": "arm-none-eabi-gdb.exe",
+            "targetArchitecture": "arm",
+            "program": "${workspaceRoot}\\bin\\out.elf",
+            "cwd": "${workspaceRoot}",
+            "setupCommands": [
+                {
+                    "text": "file 'C:/Muntakim/School/Extracurriculars/University/Design_Teams/UBC_Orbit/Work/stm32f401re-cmsis-template/bin/out.elf'"
+                },
+                {
+                    "text": "target remote localhost:3333"
+                },
+                {
+                    "text": "monitor reset halt"
+                },
+                {
+                    "text": "load"
+                }
+            ],
+            "preLaunchTask": "make",
+            "launchCompleteCommand": "None",
+            "externalConsole": false
+        }
+    ]
+}
