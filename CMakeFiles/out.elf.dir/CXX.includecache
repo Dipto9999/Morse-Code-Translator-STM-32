@@ -11,6 +11,8 @@ stm32f4xx_hal.h
 -
 stm32f4xx_hal_gpio.h
 -
+stm32f4xx_hal_uart.h
+-
 string.h
 -
 

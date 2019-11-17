@@ -1,13 +1,15 @@
-// Include header files for stm32
+// Include header files for STM32
 #include <stm32f4xx_hal.h>
 #include <stm32f4xx_hal_gpio.h>
-// #include <stm32f4xx_hal_uart.h>
+#include <stm32f4xx_hal_uart.h>
 #include <string.h>
 
-// UART_HandleTypeDef huart;
-
+// Declare a pointer to a UART_HandleTypeDef structure
+UART_HandleTypeDef huart;
+// Declare a pointer to a GPIO_InitTypeDef structure
 GPIO_InitTypeDef ginit;
 
+// Constants
 #define NUMBER_CHARACTERS 36
 #define SYSTEM_CLOCK 16000000
 #define CONVERT_TO_SECONDS 1000
@@ -19,9 +21,9 @@ GPIO_InitTypeDef ginit;
 #define WORDS_SPACE_LENGTH 600
 
 // HAL wants these clock configuration variables defined
-// uint32_t SystemCoreClock = SYSTEM_CLOCK;
-// const uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
-// const uint8_t APBPrescTable[8]  = {0, 0, 0, 0, 1, 2, 3, 4};
+uint32_t SystemCoreClock = SYSTEM_CLOCK;
+const uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+const uint8_t APBPrescTable[8]  = {0, 0, 0, 0, 1, 2, 3, 4};
 
 // Array for input to keyboard
 char characters[NUMBER_CHARACTERS] = {'A','B','C','D','E','F','G','H','I','J','K','L',
@@ -126,40 +128,70 @@ extern "C"
 int main() {
     HAL_SYSTICK_Config(SYSTEM_CLOCK/CONVERT_TO_SECONDS);
     
-    // Set up GPIOA for I/O
+    // Set up GPIOA for UART module
     __HAL_RCC_GPIOA_CLK_ENABLE();
+
+    // Initialization conditions for GPIOA
+    ginit.Pin = GPIO_PIN_2 | GPIO_PIN_3;
+    ginit.Mode = GPIO_MODE_AF_PP;
+    ginit.Speed = GPIO_SPEED_LOW;
+    ginit.Pull = GPIO_NOPULL;
+    ginit.Alternate = GPIO_AF7_USART2;
+
+    // Initialize the GPIOA with the condition above
+    HAL_GPIO_Init(GPIOA, &ginit);
+
+    __HAL_RCC_USART2_CLK_ENABLE();
+
+    // Specify configuration information for UART module
+    huart.Instance = USART2;
+    huart.Init.BaudRate = 9600;
+    huart.Init.WordLength = UART_WORDLENGTH_8B;
+    huart.Init.StopBits = UART_STOPBITS_1;
+    huart.Init.Parity = UART_PARITY_NONE; 
+    huart.Init.Mode = UART_MODE_TX_RX;
+    huart.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    huart.Init.OverSampling = UART_OVERSAMPLING_8;
+
+    // Initialize UART mode according to parameters in UART_HandleTypeDef 
+    HAL_UART_Init(&huart);
+
+    // Declare variable for size of string to convert into morse code.
+    uint8_t string_length[1];
     
+    // Prompt user for length of the phrase they wish to convert into morse code.
+    // Note only capital letters and Arabic numerals will be converted. 
+    HAL_UART_Transmit(&huart, (uint8_t*)"Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals): "
+        , strlen("Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals): "), HAL_MAX_DELAY);
+    // Receive size of string to convert into morse code.
+    HAL_UART_Receive(&huart, string_length, 1, HAL_MAX_DELAY);
+
+    // Declare variable for string to convert into morse code.
+    uint8_t user_string[(int)string_length];
+
+    // Prompt user for string to convert into morse code.
+    HAL_UART_Transmit(&huart, (uint8_t*)"Phrase to convert: ", strlen("Phrase to convert: "), HAL_MAX_DELAY);
+    // Receive string to convert into morse code.
+    HAL_UART_Receive(&huart, user_string, (int)string_length, HAL_MAX_DELAY);
+
+    // Set up GPIOB for Green LED output of morse code
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+
     // Initialization conditions for Green LED 
     ginit.Mode = GPIO_MODE_OUTPUT_PP;
     ginit.Pin = GPIO_PIN_5;
     ginit.Pull = GPIO_NOPULL;
     ginit.Speed = GPIO_SPEED_LOW;
 
-    // Initialize the GPIOA (Green LED) with the conditions specified above
-    HAL_GPIO_Init(GPIOA, &ginit);
+    // Initialize the GPIOB (Green LED) with the conditions specified above
+    HAL_GPIO_Init(GPIOB, &ginit);
 
     // Reset the Green LED 
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
 
-    // __HAL_RCC_USART2_CLK_ENABLE();
+    convertStringToMorse((char*)user_string, (int)string_length);
 
-   // huart.Instance = USART2;
-   // huart.Init.BaudRate = 9600;
-   // huart.Init.WordLength = UART_WORDLENGTH_8B;
-   // huart.Init.StopBits = UART_STOPBITS_1;
-   // huart.Init.Parity = UART_PARITY_NONE;
-   // huart.Init.Mode = UART_MODE_TX_RX;
-   // huart.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-   // huart.Init.OverSampling = UART_OVERSAMPLING_8;
-
-   // HAL_UART_Init(&huart);
-   // uint8_t buff[5];
-   // HAL_UART_Receive(&huart, buff, 5, HAL_MAX_DELAY);
-   // HAL_UART_Transmit(&huart, buff, 5, HAL_MAX_DELAY);
-
-
-    // convertStringToMorse((char*)buff, 5);
-    convertStringToMorse("A A A",5);
+    while (1){}
 }
 
 

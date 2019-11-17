@@ -1,9 +1,9 @@
-main.cpp:41:6:void outputDot()	8	static
-main.cpp:50:6:void outputDash()	8	static
-main.cpp:58:6:void changeLetter()	8	static
-main.cpp:63:6:void changeWord()	8	static
-main.cpp:70:5:int returnMorseForCharacter(char)	0	static
-main.cpp:84:6:void outputCharacter(char*)	16	static
-main.cpp:101:6:void convertStringToMorse(char*, int)	24	static
-main.cpp:126:5:int main()	24	static
-main.cpp:168:6:void handle_systick()	8	static
+main.cpp:43:6:void outputDot()	8	static
+main.cpp:52:6:void outputDash()	8	static
+main.cpp:60:6:void changeLetter()	8	static
+main.cpp:65:6:void changeWord()	8	static
+main.cpp:72:5:int returnMorseForCharacter(char)	0	static
+main.cpp:86:6:void outputCharacter(char*)	16	static
+main.cpp:103:6:void convertStringToMorse(char*, int)	24	static
+main.cpp:128:5:int main()	48	dynamic
+main.cpp:200:6:void handle_systick()	8	static
