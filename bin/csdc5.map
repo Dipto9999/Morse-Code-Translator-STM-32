@@ -10002,7 +10002,7 @@ LOAD c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none
  .isr_vec       0x08000000      0x194 CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
                 0x08000194                . = ALIGN (0x4)
 
-.text           0x08000194      0xb78
+.text           0x08000194      0xb40
                 0x08000194                . = ALIGN (0x4)
  *(.text)
  .text          0x08000194       0x40 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -10098,110 +10098,110 @@ LOAD c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none
                 0x080002f0                outputCharacter(char*)
  *fill*         0x0800031e        0x2 
  .text._Z20convertStringToMorsePci
-                0x08000320       0x54 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000320       0x50 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
                 0x08000320                convertStringToMorse(char*, int)
- .text.main     0x08000374      0x138 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
-                0x08000374                main
+ .text.main     0x08000370      0x104 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000370                main
  .text.handle_systick
-                0x080004ac        0x8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
-                0x080004ac                handle_systick
+                0x08000474        0x8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000474                handle_systick
  .text.HAL_IncTick
-                0x080004b4       0x18 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
-                0x080004b4                HAL_IncTick
+                0x0800047c       0x18 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+                0x0800047c                HAL_IncTick
  .text.HAL_GetTick
-                0x080004cc        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
-                0x080004cc                HAL_GetTick
+                0x08000494        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+                0x08000494                HAL_GetTick
  .text.HAL_Delay
-                0x080004d8       0x28 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
-                0x080004d8                HAL_Delay
+                0x080004a0       0x28 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+                0x080004a0                HAL_Delay
  .text.HAL_SYSTICK_Config
-                0x08000500       0x2c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
-                0x08000500                HAL_SYSTICK_Config
+                0x080004c8       0x2c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+                0x080004c8                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x0800052c      0x1a4 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
-                0x0800052c                HAL_GPIO_Init
+                0x080004f4      0x1a4 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+                0x080004f4                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x080006d0        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
-                0x080006d0                HAL_GPIO_WritePin
+                0x08000698        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+                0x08000698                HAL_GPIO_WritePin
  .text.HAL_RCC_GetHCLKFreq
-                0x080006dc        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
-                0x080006dc                HAL_RCC_GetHCLKFreq
+                0x080006a4        0xc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+                0x080006a4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x080006e8       0x20 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
-                0x080006e8                HAL_RCC_GetPCLK1Freq
+                0x080006b0       0x20 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+                0x080006b0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08000708       0x20 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
-                0x08000708                HAL_RCC_GetPCLK2Freq
+                0x080006d0       0x20 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+                0x080006d0                HAL_RCC_GetPCLK2Freq
  .text.UART_SetConfig
-                0x08000728      0x334 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x080006f0      0x334 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_WaitOnFlagUntilTimeout
-                0x08000a5c       0x62 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x08000a24       0x62 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_MspInit
-                0x08000abe        0x2 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
-                0x08000abe                HAL_UART_MspInit
+                0x08000a86        0x2 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x08000a86                HAL_UART_MspInit
  .text.HAL_UART_Init
-                0x08000ac0       0x5e CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
-                0x08000ac0                HAL_UART_Init
+                0x08000a88       0x5e CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x08000a88                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08000b1e       0xe0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
-                0x08000b1e                HAL_UART_Transmit
+                0x08000ae6       0xe0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x08000ae6                HAL_UART_Transmit
  .text.HAL_UART_Receive
-                0x08000bfe       0xe4 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
-                0x08000bfe                HAL_UART_Receive
- .text.strcpy   0x08000ce2       0x10 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
-                0x08000ce2                strcpy
+                0x08000bc6       0xe4 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+                0x08000bc6                HAL_UART_Receive
+ .text.strcpy   0x08000caa       0x10 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+                0x08000caa                strcpy
  *(.eh_frame)
- *fill*         0x08000cf2        0x2 
- .eh_frame      0x08000cf4        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x08000cba        0x2 
+ .eh_frame      0x08000cbc        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08000cf4        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000cf4                _init
- .init          0x08000cf8        0x8 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08000cbc        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000cbc                _init
+ .init          0x08000cc0        0x8 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08000d00        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000d00                _fini
- .fini          0x08000d04        0x8 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08000d0c                . = ALIGN (0x4)
+ .fini          0x08000cc8        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000cc8                _fini
+ .fini          0x08000ccc        0x8 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08000cd4                . = ALIGN (0x4)
 
-.glue_7         0x08000d0c        0x0
- .glue_7        0x08000d0c        0x0 linker stubs
+.glue_7         0x08000cd4        0x0
+ .glue_7        0x08000cd4        0x0 linker stubs
 
-.glue_7t        0x08000d0c        0x0
- .glue_7t       0x08000d0c        0x0 linker stubs
+.glue_7t        0x08000cd4        0x0
+ .glue_7t       0x08000cd4        0x0 linker stubs
 
-.vfp11_veneer   0x08000d0c        0x0
- .vfp11_veneer  0x08000d0c        0x0 linker stubs
+.vfp11_veneer   0x08000cd4        0x0
+ .vfp11_veneer  0x08000cd4        0x0 linker stubs
 
-.v4_bx          0x08000d0c        0x0
- .v4_bx         0x08000d0c        0x0 linker stubs
+.v4_bx          0x08000cd4        0x0
+ .v4_bx         0x08000cd4        0x0 linker stubs
 
-.iplt           0x08000d0c        0x0
- .iplt          0x08000d0c        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08000cd4        0x0
+ .iplt          0x08000cd4        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.init_array     0x08000d0c        0x4
-                0x08000d0c                __init_array_start = .
+.init_array     0x08000cd4        0x4
+                0x08000cd4                __init_array_start = .
  *(.init_array*)
- .init_array    0x08000d0c        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08000d10                __init_array_end = .
+ .init_array    0x08000cd4        0x4 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000cd8                __init_array_end = .
 
-.rodata         0x08000d10      0x14c
-                0x08000d10                . = ALIGN (0x4)
+.rodata         0x08000cd8      0x14c
+                0x08000cd8                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.APBPrescTable
-                0x08000d10        0x8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
-                0x08000d10                APBPrescTable
+                0x08000cd8        0x8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000cd8                APBPrescTable
  .rodata._ZL15morseConversion
-                0x08000d18       0xd8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000ce0       0xd8 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
  .rodata.main.str1.4
-                0x08000df0       0x6c CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
-                0x08000e5c                . = ALIGN (0x4)
-                0x08000e5c                data_lma_start = LOADADDR (.data)
+                0x08000db8       0x6c CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+                0x08000e24                . = ALIGN (0x4)
+                0x08000e24                data_lma_start = LOADADDR (.data)
 
-.rel.dyn        0x08000e5c        0x0
- .rel.iplt      0x08000e5c        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08000e24        0x0
+ .rel.iplt      0x08000e24        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x2c load address 0x08000e5c
+.data           0x20000000       0x2c load address 0x08000e24
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                data_vma_start = .
  *(.data)
@@ -10219,7 +10219,7 @@ LOAD c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none
  *fill*         0x20000029        0x3 
                 0x2000002c                data_vma_end = .
 
-.igot.plt       0x2000002c        0x0 load address 0x08000e88
+.igot.plt       0x2000002c        0x0 load address 0x08000e50
  .igot.plt      0x2000002c        0x0 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
 .bss            0x2000002c       0x74
@@ -10241,10 +10241,10 @@ LOAD c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08000e88        0x0
-                0x08000e88                __exidx_start = .
+.ARM            0x08000e50        0x0
+                0x08000e50                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000e88                __exidx_end = .
+                0x08000e50                __exidx_end = .
 
 /DISCARD/
  libc.a(*)
@@ -10290,33 +10290,33 @@ OUTPUT(bin\out.elf elf32-littlearm)
  .comment       0x00000076       0x77 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
  .comment       0x00000076       0x77 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_info     0x00000000     0x8b2c
- .debug_info    0x00000000     0x1896 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
- .debug_info    0x00001896       0x26 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
- .debug_info    0x000018bc       0x26 CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
- .debug_info    0x000018e2     0x126c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
- .debug_info    0x00002b4e     0x1913 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x00004461     0x10e8 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x00005549     0x13ca CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x00006913     0x2219 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+.debug_info     0x00000000     0x8b01
+ .debug_info    0x00000000     0x186b CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+ .debug_info    0x0000186b       0x26 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
+ .debug_info    0x00001891       0x26 CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
+ .debug_info    0x000018b7     0x126c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00002b23     0x1913 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x00004436     0x10e8 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000551e     0x13ca CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x000068e8     0x2219 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_abbrev   0x00000000     0x1500
- .debug_abbrev  0x00000000      0x33f CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
- .debug_abbrev  0x0000033f       0x14 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
- .debug_abbrev  0x00000353       0x14 CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
- .debug_abbrev  0x00000367      0x32b CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
- .debug_abbrev  0x00000692      0x45e CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
- .debug_abbrev  0x00000af0      0x2f3 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
- .debug_abbrev  0x00000de3      0x385 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
- .debug_abbrev  0x00001168      0x398 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+.debug_abbrev   0x00000000     0x14f7
+ .debug_abbrev  0x00000000      0x336 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+ .debug_abbrev  0x00000336       0x14 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
+ .debug_abbrev  0x0000034a       0x14 CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
+ .debug_abbrev  0x0000035e      0x32b CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+ .debug_abbrev  0x00000689      0x45e CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_abbrev  0x00000ae7      0x2f3 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00000dda      0x385 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_abbrev  0x0000115f      0x398 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_loc      0x00000000     0x2cc7
- .debug_loc     0x00000000      0x190 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
- .debug_loc     0x00000190      0x12c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
- .debug_loc     0x000002bc      0x700 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
- .debug_loc     0x000009bc      0x502 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
- .debug_loc     0x00000ebe      0x529 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
- .debug_loc     0x000013e7     0x18e0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+.debug_loc      0x00000000     0x2cb1
+ .debug_loc     0x00000000      0x17a CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+ .debug_loc     0x0000017a      0x12c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+ .debug_loc     0x000002a6      0x700 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_loc     0x000009a6      0x502 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_loc     0x00000ea8      0x529 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_loc     0x000013d1     0x18e0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_aranges  0x00000000      0x4d8
  .debug_aranges
@@ -10424,15 +10424,15 @@ OUTPUT(bin\out.elf elf32-littlearm)
  .debug_macro   0x0001663b      0x317 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
  .debug_macro   0x00016952      0x2f4 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_line     0x00000000     0x5f5a
- .debug_line    0x00000000      0x9f5 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
- .debug_line    0x000009f5       0xd7 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
- .debug_line    0x00000acc       0xac CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
- .debug_line    0x00000b78      0xaba CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00001632      0xcbf CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x000022f1      0xc4b CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00002f3c      0xff2 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x00003f2e     0x202c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+.debug_line     0x00000000     0x5f50
+ .debug_line    0x00000000      0x9eb CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+ .debug_line    0x000009eb       0xd7 CMakeFiles/out.elf.dir/src/startup/startup.s.obj
+ .debug_line    0x00000ac2       0xac CMakeFiles/out.elf.dir/src/startup/isr_vec.s.obj
+ .debug_line    0x00000b6e      0xaba CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00001628      0xcbf CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x000022e7      0xc4b CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00002f32      0xff2 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00003f24     0x202c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_str      0x00000000    0x80764
  .debug_str     0x00000000    0x7de1a CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
@@ -10452,11 +10452,11 @@ OUTPUT(bin\out.elf elf32-littlearm)
  .debug_str     0x000801cc      0x598 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
                               0x7e6c1 (size before relaxing)
 
-.debug_frame    0x00000000      0xb88
- .debug_frame   0x00000000      0x100 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
- .debug_frame   0x00000100      0x1cc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
- .debug_frame   0x000002cc      0x15c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
- .debug_frame   0x00000428       0xd8 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
- .debug_frame   0x00000500      0x178 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
- .debug_frame   0x00000678      0x4f0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
- .debug_frame   0x00000b68       0x20 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)
+.debug_frame    0x00000000      0xb7c
+ .debug_frame   0x00000000       0xf4 CMakeFiles/out.elf.dir/src/startup/main.cpp.obj
+ .debug_frame   0x000000f4      0x1cc CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal.c.obj
+ .debug_frame   0x000002c0      0x15c CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_frame   0x0000041c       0xd8 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_frame   0x000004f4      0x178 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_frame   0x0000066c      0x4f0 CMakeFiles/out.elf.dir/packages/hal/Src/stm32f4xx_hal_uart.c.obj
+ .debug_frame   0x00000b5c       0x20 c:/progra~2/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strcpy.o)

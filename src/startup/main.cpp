@@ -103,7 +103,7 @@ void outputCharacter(char* morseString){
 void convertStringToMorse(char* userString, int length){
     int index, morseIndex;
     char letter;
-    char morse[] = "";
+    char morse[100];
 
     for (index = 0; index < length; index++){
         letter = userString[index];
@@ -128,7 +128,7 @@ extern "C"
 int main() {
     HAL_SYSTICK_Config(SYSTEM_CLOCK/CONVERT_TO_SECONDS);
     
-    // Set up GPIOA for UART module
+    // Set up GPIOA for UART module and for Green LED output of morse code
     __HAL_RCC_GPIOA_CLK_ENABLE();
 
     // Initialization conditions for GPIOA
@@ -167,15 +167,12 @@ int main() {
     HAL_UART_Receive(&huart, string_length, 1, HAL_MAX_DELAY);
 
     // Declare variable for string to convert into morse code.
-    uint8_t user_string[(int)string_length];
+    uint8_t user_string[100];
 
     // Prompt user for string to convert into morse code.
     HAL_UART_Transmit(&huart, (uint8_t*)"Phrase to convert: ", strlen("Phrase to convert: "), HAL_MAX_DELAY);
     // Receive string to convert into morse code.
-    HAL_UART_Receive(&huart, user_string, (int)string_length, HAL_MAX_DELAY);
-
-    // Set up GPIOB for Green LED output of morse code
-    __HAL_RCC_GPIOB_CLK_ENABLE();
+    HAL_UART_Receive(&huart, user_string, string_length[0]-'0', HAL_MAX_DELAY);
 
     // Initialization conditions for Green LED 
     ginit.Mode = GPIO_MODE_OUTPUT_PP;
@@ -183,13 +180,13 @@ int main() {
     ginit.Pull = GPIO_NOPULL;
     ginit.Speed = GPIO_SPEED_LOW;
 
-    // Initialize the GPIOB (Green LED) with the conditions specified above
-    HAL_GPIO_Init(GPIOB, &ginit);
+    // Initialize the GPIOA (Green LED) with the conditions specified above
+    HAL_GPIO_Init(GPIOA, &ginit);
 
     // Reset the Green LED 
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 
-    convertStringToMorse((char*)user_string, (int)string_length);
+    convertStringToMorse((char*)user_string, string_length[0]-'0');
 
     while (1){}
 }
