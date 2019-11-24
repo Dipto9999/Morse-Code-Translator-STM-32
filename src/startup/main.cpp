@@ -103,7 +103,7 @@ void outputCharacter(char* morseString){
 void convertStringToMorse(char* userString, int length){
     int index, morseIndex;
     char letter;
-    char morse[100];
+    char morse[MAX_MORSE_SIZE];
 
     for (index = 0; index < length; index++){
         letter = userString[index];
@@ -117,7 +117,6 @@ void convertStringToMorse(char* userString, int length){
                 // Copy the morse code into an array to be used as parameter for output
                 strcpy(morse,morseConversion[morseIndex]);
                 outputCharacter(morse);
-                strcpy(morse,"");
             }
         }
     }
@@ -138,7 +137,7 @@ int main() {
     ginit.Pull = GPIO_NOPULL;
     ginit.Alternate = GPIO_AF7_USART2;
 
-    // Initialize the GPIOA with the condition above
+    // Initialize the GPIOA according to parameters in GPIO_InitTypeDef in preparation for UART module 
     HAL_GPIO_Init(GPIOA, &ginit);
 
     __HAL_RCC_USART2_CLK_ENABLE();
@@ -161,18 +160,30 @@ int main() {
     
     // Prompt user for length of the phrase they wish to convert into morse code.
     // Note only capital letters and Arabic numerals will be converted. 
-    HAL_UART_Transmit(&huart, (uint8_t*)"Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals): "
-        , strlen("Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals): "), HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart, (uint8_t*)"Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals, size less than 10): ",
+        strlen("Size of phrase to convert into Morse Code (Only Capital letters and Arabic numerals, size less than 10): "), HAL_MAX_DELAY);
     // Receive size of string to convert into morse code.
     HAL_UART_Receive(&huart, string_length, 1, HAL_MAX_DELAY);
+    // Let user know what size is being input into terminal
+    HAL_UART_Transmit(&huart, string_length, 1, HAL_MAX_DELAY);
+
+    // Subtract the string_length by 0 to account for the ASCII value associated with the character
+    string_length[0] = string_length[0] - '0'; 
+
+    // Check if input cannot be converted into positive integer size according to specifications
+    if (string_length[0] < 0 || string_length[0] > 9){
+        return -1;
+    } 
 
     // Declare variable for string to convert into morse code.
-    uint8_t user_string[100];
+    uint8_t user_string[string_length[0]];
 
     // Prompt user for string to convert into morse code.
-    HAL_UART_Transmit(&huart, (uint8_t*)"Phrase to convert: ", strlen("Phrase to convert: "), HAL_MAX_DELAY);
+    HAL_UART_Transmit(&huart, (uint8_t*)" Phrase to convert: ", strlen(" Phrase to convert: "), HAL_MAX_DELAY);
     // Receive string to convert into morse code.
-    HAL_UART_Receive(&huart, user_string, string_length[0]-'0', HAL_MAX_DELAY);
+    HAL_UART_Receive(&huart, user_string, string_length[0], HAL_MAX_DELAY);
+    // Let user know what string is being input into terminal
+    HAL_UART_Transmit(&huart, user_string, string_length[0], HAL_MAX_DELAY);
 
     // Initialization conditions for Green LED 
     ginit.Mode = GPIO_MODE_OUTPUT_PP;
@@ -180,14 +191,14 @@ int main() {
     ginit.Pull = GPIO_NOPULL;
     ginit.Speed = GPIO_SPEED_LOW;
 
-    // Initialize the GPIOA (Green LED) with the conditions specified above
+    // Initialize the GPIOA (Green LED) according to parameters in GPIO_InitTypeDef 
     HAL_GPIO_Init(GPIOA, &ginit);
 
     // Reset the Green LED 
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 
-    convertStringToMorse((char*)user_string, string_length[0]-'0');
-
+    convertStringToMorse((char*)user_string, string_length[0]);
+    
     while (1){}
 }
 

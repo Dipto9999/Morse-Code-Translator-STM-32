@@ -398,7 +398,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //C only Flags
 FLAGS_C:INTERNAL=
 //C / C++ common Flags
-FLAGS_COMMON:INTERNAL=-fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3
+FLAGS_COMMON:INTERNAL=-save-temps -fstack-usage -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -Wall -g3
 //C++ only Flags
 FLAGS_CXX:INTERNAL=-std=c++17 -Wno-register -fno-unwind-tables -fno-exceptions -fno-rtti
 //Linker flags
