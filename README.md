@@ -15,4 +15,4 @@ The <a href= "src/startup/main.cpp">file</a> in which this is implemented is a C
 ## Credit
 Credit should be provided to <b>UBC Orbit</b> and <b>Sam Schweigel</b> of <b>Command and Data Handling</b> for assistance in implementing the UART and debugging the code, involving pointers and STM library functions.
 
-<i>Images are sourced from STM Datasheets.</i>
+<i>Images are sourced from STM-32 Datasheets.</i>
