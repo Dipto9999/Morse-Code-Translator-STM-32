@@ -4,9 +4,9 @@
 #include <stm32f4xx_hal_uart.h>
 #include <string.h>
 
-// Declare a pointer to a UART_HandleTypeDef structure
+// Declare a UART_HandleTypeDef structure
 UART_HandleTypeDef huart;
-// Declare a pointer to a GPIO_InitTypeDef structure
+// Declare a GPIO_InitTypeDef structure
 GPIO_InitTypeDef ginit;
 
 // Constants
